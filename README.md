@@ -1,7 +1,46 @@
 # flutter_app-terraform-deploy-to-aws-
 Flutter App with deployment to AWS
 
-Creating a Flutter mobile app with a NestJS backend that includes user authentication (login) is a great full-stack project. I'll outline the steps for both the **frontend (Flutter)** and **backend (NestJS)**, including basic login functionality with JWT-based authentication.
+
+Creating a Flutter mobile app with a NestJS backend that includes user authentication (login) is a great full-stack project. 
+
+#Project Directory
+```
+project-root/
+│
+├── flutter-frontend/          # Flutter frontend
+│   ├── android/               # Android platform-specific files
+│   ├── ios/                   # iOS platform-specific files
+│   ├── lib/                   # Main Flutter application code
+│   │   ├── auth_service.dart  # Service for API calls to the NestJS backend
+│   │   ├── login_screen.dart  # UI for the login screen
+│   │   ├── main.dart          # Main entry point for Flutter app
+│   │   └── ...                # Additional Flutter code (other screens, widgets)
+│   ├── assets/                # Assets like fonts, images
+│   ├── pubspec.yaml           # Flutter dependencies and project configuration
+│   └── test/                  # Unit and widget tests for Flutter app
+│
+└── nest-backend/              # NestJS backend
+    ├── src/                   # Main application code
+    │   ├── auth/              # Auth module for login and registration
+    │   │   ├── auth.module.ts
+    │   │   ├── auth.service.ts
+    │   │   ├── auth.controller.ts
+    │   │   └── jwt.strategy.ts
+    │   ├── users/             # User module for managing users
+    │   │   ├── users.module.ts
+    │   │   ├── users.service.ts
+    │   │   ├── users.controller.ts
+    │   │   └── user.entity.ts
+    │   ├── app.module.ts      # Main app module
+    │   └── main.ts            # Main entry point for NestJS server
+    ├── test/                  # Unit and end-to-end tests
+    ├── node_modules/          # Node.js dependencies
+    ├── package.json           # Node.js dependencies and project configuration
+    ├── tsconfig.json          # TypeScript configuration
+    └── .env                   # Environment variables (JWT secret, database credentials)
+
+```
 
 ### **Step-by-Step Guide**
 
