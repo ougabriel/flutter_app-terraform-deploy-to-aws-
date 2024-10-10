@@ -1,5 +1,5 @@
 # flutter_app-terraform-deploy-to-aws-
-Flutter App with deployment to AWS
+Flutter App with deployment to AWS 
 
 
 Creating a Flutter mobile app with a NestJS backend that includes user authentication (login) is a great full-stack project. 
